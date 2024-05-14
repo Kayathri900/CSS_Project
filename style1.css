@@ -1,0 +1,20 @@
+:root{
+    --BGCOLOR:#88477e;
+    --RADIALCOLOR:RED;
+    --LIGH-COLOR:RED;
+    --FF:'Times New Roman', Times, serif;
+    --FS: 2rem;
+    --SHADOWS:0 10PX 5PX -5PX var(var(--LIGH-COLOR))
+    }
+
+body{
+    background-color: var(--BGCOLOR);
+    font-size: var(--FS);
+    border :2px solid black;
+    padding: 0.5REM;
+    box-shadow: var(--SHADOWS);
+}
+p{
+    
+    font:var(--FF) var(--FS)
+}

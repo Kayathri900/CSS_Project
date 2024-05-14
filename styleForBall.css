@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    background-image: linear-gradient(whitesmoke,rgb(97, 61, 67))
+}
+.container{
+    border: 10px double red;
+    font-size: 1.5rem;
+    margin: 2em ;
+    padding: 1.5em;
+    outline: 5px solid purple;
+    display: flex;
+    flex-direction: row;
+}
+.ball{
+    background-color:green;
+    border: 2px solid black;
+    margin: 2px auto;
+    padding: 2px;
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+}
+
+div:first-child{
+    background-color: gold;
+}
+div:first-child:hover{
+    transform: rotate(180deg);
+
+}
+
+.animation{
+    animation-name: falling;
+    animation-duration: 5s;
+    /* animation-timing-function: cubic-bezier(0.95, 0.05, 0.795, 0.035); */
+    animation-iteration-count: 5;
+}
+
+@keyframes falling {
+    0%{
+        transform: translate(0);
+    }
+    /* 33%{
+        transform: translate(0px,150px);
+    } */
+    66%{
+        transform: translate(0px,-150px);
+    }
+    100%{
+        transform: translate(0);
+        background-color: purple;
+    }
+}

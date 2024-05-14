@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box    
+}
+
+
+
+body{
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: radial-gradient(whitesmoke,#485573);
+    background-color: #475570;
+
+}
+header,main,footer{
+    padding: 0.5rem;
+    display: grid;
+    place-content: center;
+    grid-template-columns: 100%;
+    text-align: center;
+}
+
+.block{
+    display: flex;
+    justify-content: start;
+    align-items: top;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+.flex-box1{
+    padding: 5rem;
+    background-color: blue;
+}
+.flex-box2{
+    padding: 5rem;
+    background-color: rgb(0, 255, 42);
+}
+.flex-box3{
+    padding: 5rem;
+    background-color: rgb(255, 0, 43);
+}
+.flex-box4{
+    padding: 5rem;
+    background-color: rgb(251, 255, 0);
+}
+.flex-box5{
+    padding: 5rem;
+    background-color: rgb(0, 221, 255);
+}
+
+.flex-box6{
+    padding: 5rem 10rem;
+    background-color: olivedrab;
+}
+.block-gird{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1rem;
+    margin-top: 0.5rem;
+    align-content: center;
+    
+}
+.gird-box1{
+    padding: 5rem;
+    background-color: rgb(239, 38, 179);
+    text-align: center;
+}
+.block-gird :nth-child(1){
+    padding: 10rem;
+}
+header,footer{
+    background-color: whitesmoke;
+    color: rgb(14, 15, 15);
+    position: sticky;
+}
+header{
+    top: 0;
+    background-color: violet;
+}
+
+
+footer{
+    bottom: 0;
+    background-color: slateblue;
+}
+main{
+    flex-grow: 1;
+    place-content: start;
+}
+
+@media screen and (min-width:576px) {
+    body{
+        background-color: blue;
+    }
+}
+@media screen and (min-width:768px) {
+    body{
+        background-color: gold;
+    }
+    nav{
+        display: none;
+    }
+}
