@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styleForTable.css">
+</head>
+<body>
+    <main class="main">
+        <article class="main_container">
+            
+                <table class="main__table">
+                    <caption class="table__title">Employee Table</caption>
+                    <thead >
+                        <tr>
+                            <th class="table__header">Employye ID</th>
+                            <th class="table__header">First name</th>
+                            <th class="table__header">Age</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="table__item">101</td>
+                            <td class="table__item">John</td>
+                            <td class="table__item">26</td>
+                        </tr>
+                        <tr>
+                            <td class="table__item">102</td>
+                            <td class="table__item">David</td>
+                            <td class="table__item">27</td>
+                        </tr>
+                    </tbody>
+                    
+                </table>
+            
+        </article>
+    </main>
+</body>
+</html>
